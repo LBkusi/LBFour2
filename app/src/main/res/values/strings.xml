@@ -50,7 +50,7 @@
         <item>Custom</item>
 
     </string-array>
-    
+
     <string-array name="Enter_Borough">
         <item>Barking and Dagenham</item>
         <item>Barnet</item>
@@ -87,6 +87,17 @@
         <item>Wandsworth</item>
 
     </string-array>
+
+    <string-array name="Subject">
+        <item>Select Subject</item>
+        <item>Parking</item>
+        <item>Inside Lights</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 
 </resources>

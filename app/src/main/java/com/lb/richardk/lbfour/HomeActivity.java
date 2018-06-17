@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,16 +34,6 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        Button reportincidentbtn = (Button)findViewById(R.id.ReportIncidentbtn);
-        reportincidentbtn.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), ReportIncidentActivity.class);
-                startActivity(startIntent);
-            }
-        });
-
         Button contactusbtn = (Button)findViewById(R.id.Contactusbtn);
         contactusbtn.setOnClickListener(new View.OnClickListener() {
 
@@ -52,6 +43,16 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(startIntent);
             }
         });
+
+        Button settingbutton = (Button) findViewById(R.id.Settingbutton);
+        settingbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), SettingActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
 
     }
 }

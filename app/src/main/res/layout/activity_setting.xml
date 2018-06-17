@@ -23,50 +23,73 @@
         app:layout_constraintVertical_bias="0.066" />
 
     <Button
-        android:id="@+id/AccountSettingbtn"
+        android:id="@+id/Accountbtn"
         android:layout_width="181dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Account Setting"
+        android:text="Account"
+        android:textAllCaps="false"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SettingseditText"
-        app:layout_constraintVertical_bias="0.183" />
+        app:layout_constraintTop_toBottomOf="@+id/Tutorialbutton"
+        app:layout_constraintVertical_bias="0.068" />
 
     <Button
-        android:id="@+id/PersonalDetailsbtn"
+        android:id="@+id/Notificationsbtn"
         android:layout_width="181dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Personal Details"
+        android:text="Notifications"
+        android:textAllCaps="false"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AccountSettingbtn"
+        app:layout_constraintTop_toBottomOf="@+id/Accountbtn"
         app:layout_constraintVertical_bias="0.154" />
 
     <Button
-        android:id="@+id/VehicleDetailsbtn"
+        android:id="@+id/Aboutbtn"
         android:layout_width="181dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Vehicle Details"
+        android:text="About"
+        android:textAllCaps="false"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PersonalDetailsbtn"
+        app:layout_constraintTop_toBottomOf="@+id/Notificationsbtn"
         app:layout_constraintVertical_bias="0.238" />
+
+    <Button
+        android:id="@+id/Tutorialbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Tutorial"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254" />
 </android.support.constraint.ConstraintLayout>

@@ -4,11 +4,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
-
-import java.text.DateFormat;
-import java.util.Calendar;
 
 public class SendAlertActivity extends AppCompatActivity {
 
@@ -46,13 +45,12 @@ public class SendAlertActivity extends AppCompatActivity {
             }
         });
 
+        Spinner mySpinner = (Spinner) findViewById(R.id.Subjectspinner2);
 
-
-        Calendar calendar = Calendar.getInstance();
-        String currentDate = DateFormat.getDateInstance().format(calendar.getTime());
-
-        TextView textViewDate = findViewById(R.id.text_view_date);
-        textViewDate.setText(currentDate);
+        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(SendAlertActivity.this,
+                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Subject));
+        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        mySpinner.setAdapter(myAdapter);
 
     }
 }

@@ -18,17 +18,53 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".VehicleActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".VehicleActivity"
+            android:parentActivityName=".RegisterActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".ReportIncidentActivity" />
-        <activity android:name=".SendAlertActivity" />
-        <activity android:name=".ReceivedActivity" />
-        <activity android:name=".ContactUsActivity" />
-        <activity android:name=".FeedbackActivity" />
-        <activity android:name=".SettingActivity" />
-        <activity android:name=".HelpEnquireActivity" />
-        <activity android:name=".VerificationActivity"></activity>
+        <activity
+            android:name=".SendAlertActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ReceivedActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:parentActivityName=".ContactUsActivity" />
+        <activity
+            android:name=".SettingActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".HelpEnquireActivity"
+            android:parentActivityName=".ContactUsActivity" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".TutorialActivity"
+            android:parentActivityName=".AccountActivity" />
+        <activity
+            android:name=".AccountActivity"
+            android:parentActivityName=".SettingActivity" />
+        <activity
+            android:name=".AddVehicleActivity"
+            android:parentActivityName=".AccountActivity" />
+        <activity
+            android:name=".PrivacyActivity"
+            android:parentActivityName=".AccountActivity" />
+        <activity android:name=".UpdateDetailsActivity" />
+        <activity android:name=".SentReceivedActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".NotificationsActivity" />
     </application>
 
 </manifest>

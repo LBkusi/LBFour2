@@ -1,8 +1,8 @@
 package com.lb.richardk.lbfour;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -11,23 +11,24 @@ import android.widget.Spinner;
 
 public class VehicleActivity extends AppCompatActivity {
 
-    AutoCompleteTextView autoCompleteTextView;
-    String [] Enter_Borough;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vehicle);
 
-        Button nextbtn = (Button)findViewById(R.id.Nextbtn);
-        nextbtn.setOnClickListener(new View.OnClickListener() {
+        Button registerbtn1 = (Button)findViewById(R.id.Registerbtn1);
+        registerbtn1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent startIntent= new Intent(getApplicationContext(), VerificationActivity.class);
+                Intent startIntent= new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(startIntent);
-
             }
         });
+
+        AutoCompleteTextView autoCompleteTextView;
+        String [] Enter_Borough;
 
         Spinner mySpinner = (Spinner) findViewById(R.id.MakeSpinner1);
 
